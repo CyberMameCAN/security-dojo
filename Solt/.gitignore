@@ -1,0 +1,16 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# IDE specific files
+.vscode
+.idea
+
+# .env file
+.env
+
+# OS X generated file
+.DS_Store
