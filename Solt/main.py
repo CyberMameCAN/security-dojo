@@ -13,7 +13,7 @@ def encryption_tool():
     print(f'[この文字列をハッシュ化] {test_string}')
 
     md5_hash_object = hashlib.md5(test_string.encode())
-    print(f'[MD5を使う] {md5_hash_object.hexdigest()}')
+    print(f'[MD5を使う(使うな危険!)] {md5_hash_object.hexdigest()}')
 
     sha256_hash_object = hashlib.sha256((test_string + solt).encode())
     print(f'[SHA256 + Soltを使う] {sha256_hash_object.hexdigest()}')
