@@ -12,6 +12,7 @@ def encryption_tool():
     test_string = 'abcdefghijklmn123456789'
     print(f'[この文字列をハッシュ化] {test_string}')
 
+    # 文字列.encode() バイト文字列に変換が必要
     md5_hash_object = hashlib.md5(test_string.encode())
     print(f'[MD5を使う(使うな危険!)] {md5_hash_object.hexdigest()}')
 
