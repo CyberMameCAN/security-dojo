@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  oidc-client:
+    build: .
+    ports:
+      - "28888:8080"
+    env_file:
+      - .env
