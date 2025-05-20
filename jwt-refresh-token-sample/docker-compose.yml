@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "52808:8080"
+    volumes:
+      - .:/app
+    environment:
+      - JWT_SECRET=your_jwt_secret_key
+      - REFRESH_SECRET=your_refresh_secret_key
+      - TOKEN_EXPIRE_MINUTES=15
+      - REFRESH_EXPIRE_DAYS=7
+    # command: go run main.go
